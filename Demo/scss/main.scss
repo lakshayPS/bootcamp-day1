@@ -1,0 +1,177 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+}
+
+.header-container {
+  background: $bg-gray;
+}
+
+.centered-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  background-color: $text-color;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.primary-button {
+  background: #4caf4f;
+  color: #fff;
+}
+
+.secondary-button {
+  background: transparent;
+  color: #4caf4f;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-section {
+  padding: 22px 0;
+}
+
+.heading-1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.para {
+  font-size: 16px;
+  color: #717171;
+}
+
+.care-desc {
+  width: 630px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.care-container {
+  padding-top: 48px;
+}
+
+.care-image-container {
+  position: relative;
+  width: 368px;
+}
+
+.care-text {
+  position: absolute;
+  background: $bg-gray;
+  width: 80%;
+  left: 10%;
+  height: 135px;
+  top: 68%;
+  border-radius: 6px;
+  text-align: center;
+  padding: 45px;
+  box-sizing: border-box;
+  color: $care-text-color;
+}
+
+.care-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+
+.clients {
+  @include container-block;
+}
+
+.clients-container {
+  padding-top: $container-top-padding;
+}
+
+.clients-title {
+  width: $client-width;
+  text-align: center;
+}
+
+.clients-desc {
+  @include desc-container;
+}
+
+.clients-logo {
+  display: flex;
+  justify-content: center;
+  top: 40px;
+}
+
+.community-container {
+  @include container-block;
+  padding-top: $container-top-padding;
+}
+.community-container-title {
+  width: 542px;
+  height: 88px;
+  text-align: center;
+}
+
+.community-container-desc {
+  @include desc-container;
+}
+
+.community-frame {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame-item {
+  width: 299px;
+  height: 260px;
+  @include container-block;
+  gap: 8px;
+}
+
+.frame-member {
+  @include container-block;
+  gap: 16px;
+}
+
+.frame-member-title {
+  text-align: center;
+  // gap: 16px;
+  width: 231px;
+}
+
+.frame-desc {
+  @include desc-container;
+  width: 251px;
+  height: 75px;
+  gap: 16px;
+}

@@ -1,0 +1,18 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin desc-container {
+  color: $care-text-color;
+  width: $client-width;
+  text-align: center;
+}
+
+@mixin container-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
