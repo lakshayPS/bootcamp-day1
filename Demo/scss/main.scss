@@ -40,13 +40,13 @@ body {
 }
 
 .primary-button {
-  background: #4caf4f;
+  background: $bg-green;
   color: #fff;
 }
 
 .secondary-button {
   background: transparent;
-  color: #4caf4f;
+  color: $bg-green;
 }
 
 .flex-center {
@@ -174,4 +174,66 @@ body {
   width: 251px;
   height: 75px;
   gap: 16px;
+}
+.achievement-section {
+    background-color: $bg-gray;
+}
+.achievement-container {
+    height: 288px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    padding: 64px 144px;
+    align-items: center;
+}
+
+.achievement-heading {
+    width: 540px;
+    height: 120px;
+}
+.achievement-heading-title {
+    width: 408px;
+    height: 88px;
+}
+.title2 {
+    color: $bg-green;
+}
+
+.achievement-desc {
+    font-size: 16px;
+
+}
+
+.achievement-counts{
+    width: 540px;
+    height: 160px;
+    display: grid;
+  grid-template-columns: auto auto;
+}
+
+.count-row {
+    width: 255px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.count-detail {
+    display: flex;
+    flex-direction: column;
+    width: 191px;
+    height: 60px;
+}
+
+.count-img {
+    width: 48px;
+    height: 48px;
+}
+.count-num {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.count-label {
+    color: $care-text-color;
 }
