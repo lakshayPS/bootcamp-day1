@@ -117,6 +117,10 @@ body {
   padding-top: $container-top-padding;
 }
 
+.client-item {
+  list-style: none;
+}
+
 .clients-title {
   width: $client-width;
   text-align: center;
@@ -124,12 +128,14 @@ body {
 
 .clients-desc {
   @include desc-container;
+  margin-top: 8px;
 }
 
 .clients-logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   top: 40px;
+  margin-top: 16px;
 }
 
 .community-container {
@@ -144,11 +150,14 @@ body {
 
 .community-container-desc {
   @include desc-container;
+  margin-top: 8px;
 }
 
 .community-frame {
   display: flex;
   justify-content: space-between;
+  height: 280px;
+  margin-top: 16px;
 }
 
 .frame-item {
@@ -156,6 +165,7 @@ body {
   height: 260px;
   @include container-block;
   gap: 8px;
+  box-shadow: 0px 2px 4px 0px #abbed133;
 }
 
 .frame-member {
@@ -176,64 +186,63 @@ body {
   gap: 16px;
 }
 .achievement-section {
-    background-color: $bg-gray;
+  background-color: $bg-gray;
 }
 .achievement-container {
-    height: 288px;
-    display: flex;
-    gap: 8px;
-    justify-content: space-between;
-    padding: 64px 144px;
-    align-items: center;
+  height: 288px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  padding: 64px 144px;
+  align-items: center;
 }
 
 .achievement-heading {
-    width: 540px;
-    height: 120px;
+  width: 540px;
+  height: 120px;
 }
 .achievement-heading-title {
-    width: 408px;
-    height: 88px;
+  width: 408px;
+  height: 88px;
 }
 .title2 {
-    color: $bg-green;
+  color: $bg-green;
 }
 
 .achievement-desc {
-    font-size: 16px;
-
+  font-size: 16px;
 }
 
-.achievement-counts{
-    width: 540px;
-    height: 160px;
-    display: grid;
+.achievement-counts {
+  width: 540px;
+  height: 160px;
+  display: grid;
   grid-template-columns: auto auto;
 }
 
 .count-row {
-    width: 255px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
+  width: 255px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .count-detail {
-    display: flex;
-    flex-direction: column;
-    width: 191px;
-    height: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+  height: 60px;
 }
 
 .count-img {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
 .count-num {
-    font-size: 28px;
-    font-weight: 700;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .count-label {
-    color: $care-text-color;
+  color: $care-text-color;
 }
