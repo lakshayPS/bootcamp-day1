@@ -36,6 +36,7 @@ function objDes() {
   const { city } = address;
 
   console.log(`${name} lives in ${city}.`);
+  console.log("address", address);
 }
 objDes();
 
