@@ -9,4 +9,15 @@ public class BankAccount {
         this.balance = bal;
     }
 
+    public String getHolderName() {
+        return holderName;
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
 }

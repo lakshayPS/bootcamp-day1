@@ -21,34 +21,11 @@ public class ExceptionHandeling {
                 System.out.println("Result: " + res);
             } catch (ArithmeticException e) {
                 System.out.println("Division by zero exception occured.");
-                throw e;
             }
 
             arr[5] = 100;
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Array index out of bounds exception occured.");
-        } catch (RuntimeException e) {
-            System.out.println("");
-        }
-
-        System.out.println("Progress continues normally...");
-    }
-
-    public void customException(String email) {
-        try {
-            validateEmail(email);
-            System.out.println("Email is valid!");
-        } catch (InvalidEmailException e) {
-            System.out.println("Error: " + e.getMessage());
-        } finally {
-            System.out.println("Validation process completed.");
-        }
-    }
-
-    public static void validateEmail(String email) throws InvalidEmailException {
-        if(!email.contains("@")) {
-            throw new InvalidEmailException("Email must contain '@' symbol!");
-
         }
     }
 
@@ -73,4 +50,24 @@ public class ExceptionHandeling {
             System.out.println("Exception in m1(): " + e);
         }
     }
+
+    public void customException(String email) {
+        try {
+            validateEmail(email);
+            System.out.println("Email is valid!");
+        } catch (InvalidEmailException e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            System.out.println("Validation process completed.");
+        }
+    }
+
+    public static void validateEmail(String email) throws InvalidEmailException {
+        if(!email.contains("@")) {
+            throw new InvalidEmailException("Email must contain '@' symbol!");
+
+        }
+    }
+
+
 }

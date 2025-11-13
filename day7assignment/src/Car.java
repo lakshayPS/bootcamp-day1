@@ -10,4 +10,12 @@ public class Car {
         this.modelName = name;
         this.price = price;
     }
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public int getPrice() {
+        return price;
+    }
 }
