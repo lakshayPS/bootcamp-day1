@@ -7,7 +7,4 @@ public class Counter {
     public static void getCounter() {
         System.out.println("Counter: " + counter);
     }
-    public void resetCounter() {
-         counter = 0;
-    }
 }
