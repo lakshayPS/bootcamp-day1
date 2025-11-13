@@ -1,0 +1,60 @@
+1. ps aux --sort = -%mem | head -2
+   sudo kill 7081
+
+2. sudo adduser devops
+   sudo usermod -aG devops
+   
+3. ssh manoj-jaiswal@10.1.210.44
+   mkdir -p /home/manoj-jaiswal/Documents/linux
+   scp /home/lakshay-pratap-singh/Documents/demo5 manoj-jaiswal@10.1.210.44:/home/manoj-jaiswal/Documents/linux
+   exit
+
+
+4. ps -ef | grep java > java_file
+
+5. 
+
+6. grep -i "error" /var/log/syslog > errors_found.txt
+7. find /etc -type f -name "*.conf" | sort > conf_list.txt
+8. cut -d: -f7 /etc/passwd | sort | uniq | wc -l > shell_count.txt
+9. vim practice.txt
+i
+This is a vim practice file.
+We are learning cursor movement, editing, and more.
+Vim is powerful!
+h
+l
+j
+k
+i
+a
+dd
+dw
+yy
+p
+u
+Ctrl + r
+/vim
+n
+:w
+:wq
+
+10. sudo passwd $USER
+   sudo reboot
+11. ssh lakshay-pratap-singh@192.168.0.188
+lakshay-pratap-singh@192.168.0.188's password:
+scp sample.tar.gz lakshay-pratap-singh@192.168.0.188:/home/lakshay-pratap-singh/Documents
+tar -xzvf home_backup.tar.gz -C /home/lakshay-pratap-singh/
+
+
+12. sudo apt install mysql-server -y
+sudo systemctl start mysql
+sudo systemctl enable mysql
+sudo mysql_secure_installation
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+sudo tar -xzf postman.tar.gz -C /opt
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+
