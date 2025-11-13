@@ -1,21 +1,23 @@
 // task1
 function task1() {
-  var formData = document.getElementById("formId");
   function handleSubmit(e) {
     e.preventDefault();
-    var userName = formData.userName.value;
-    var userAge = formData.userAge.value;
 
-    if (userName == null || userName == "") {
-      alert("name is empty");
+    const userName = e.target.userName.value;
+    const userAge = e.target.userAge.value;
+
+    if (!userName) {
+      alert("Name is empty");
       return;
     } else if (userAge <= 18) {
-      alert("age is less than or equal to 18");
+      alert("Age is less than or equal to 18");
       return;
     }
 
-    formData.submit();
+    alert("Form submitted successfully!");
+    e.target.submit(); // submit the same form
   }
+  document.getElementById("formId").addEventListener("submit", handleSubmit);
 }
 task1();
 
