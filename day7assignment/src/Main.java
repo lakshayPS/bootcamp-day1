@@ -3,87 +3,87 @@ void main() {
     Assignment ques = new Assignment();
 
 //    1
-//    System.out.println("Enter a number for sum of its digit: ");
-//    int num = sc.nextInt();
-//    int sumOfDigits = ques.sumOfDigits(num);
-//    System.out.println(sumOfDigits);
+    System.out.println("Enter a number for sum of its digit: ");
+    int num = sc.nextInt();
+    int sumOfDigits = ques.sumOfDigits(num);
+    System.out.println(sumOfDigits);
 
 //    2
-//    System.out.println("Enter a number for its multiplication table: ");
-//    int num2 = sc.nextInt();
-//    ques.multiplicationTable(num2);
+    System.out.println("Enter a number for its multiplication table: ");
+    int num2 = sc.nextInt();
+    ques.multiplicationTable(num2);
 
 //    3
-//    System.out.print("Enter a number for factorial: ");
-//    int num3 = sc.nextInt();
-//    int fact = ques.getFactorial(num3);
-//    System.out.println(fact);
+    System.out.print("Enter a number for factorial: ");
+    int num3 = sc.nextInt();
+    int fact = ques.getFactorial(num3);
+    System.out.println(fact);
 
 //    4
-//    System.out.print("Enter a number for reversing digit: ");
-//    int num4 = sc.nextInt();
-//    int rev = ques.reverseDigits(num4);
-//    System.out.println("After reversing " + num4 + " : " + rev);
+    System.out.print("Enter a number for reversing digit: ");
+    int num4 = sc.nextInt();
+    int rev = ques.reverseDigits(num4);
+    System.out.println("After reversing " + num4 + " : " + rev);
 
 //    5
-//    Calculator calc = new Calculator();
-//    System.out.println("Enter num1: ");
-//    int num5 = sc.nextInt();
-//    System.out.println("Enter num2: ");
-//    int num6 = sc.nextInt();
-//
-//    System.out.println("Enter: 1 for addition \n 2 for subtraction \n 3 for multiplication \n 4 for division");
-//    int opt = sc.nextInt();
-//    switch (opt) {
-//        case 1:
-//            System.out.println("Result: " + calc.add(num5, num6));
-//            break;
-//        case 2:
-//            System.out.println("Result: " + calc.sub(num5, num6));
-//            break;
-//        case 3:
-//            System.out.println("Result: " + calc.multiply(num5, num6));
-//            break;
-//        case 4:
-//            System.out.println("Result: " + calc.divide(num5, num6));
-//            break;
-//        default:
-//            System.out.println("Wrong option!!!");
-//    }
+    Calculator calc = new Calculator();
+    System.out.println("Enter num1: ");
+    int num5 = sc.nextInt();
+    System.out.println("Enter num2: ");
+    int num6 = sc.nextInt();
+
+    System.out.println("Enter: 1 for addition \n 2 for subtraction \n 3 for multiplication \n 4 for division");
+    int opt = sc.nextInt();
+    switch (opt) {
+        case 1:
+            System.out.println("Result: " + calc.add(num5, num6));
+            break;
+        case 2:
+            System.out.println("Result: " + calc.sub(num5, num6));
+            break;
+        case 3:
+            System.out.println("Result: " + calc.multiply(num5, num6));
+            break;
+        case 4:
+            System.out.println("Result: " + calc.divide(num5, num6));
+            break;
+        default:
+            System.out.println("Wrong option!!!");
+    }
 
 //    6
-//    System.out.print("Enter name: ");
-//    String name = sc.nextLine();
-//
-//    System.out.print("Enter number of subjects: ");
-//    int n = sc.nextInt();
-//
-//    int[] marks = new int[n];
-//    for (int i = 0; i < n; i++) {
-//        System.out.print("Enter marks for subject " + (i + 1) + ": ");
-//        marks[i] = sc.nextInt();
-//    }
-//    Student student = new Student(name, marks);
-//
-//    int total = student.calculateTotal();
-//    double avg = student.calculateAverage();
-//
-//    System.out.println("\nStudent Name: " + name);
-//    System.out.println("Total Marks: " + total);
-//    System.out.println("Average Marks: " + avg);
+    System.out.print("Enter name: ");
+    String name = sc.nextLine();
+
+    System.out.print("Enter number of subjects: ");
+    int n = sc.nextInt();
+
+    int[] marks = new int[n];
+    for (int i = 0; i < n; i++) {
+        System.out.print("Enter marks for subject " + (i + 1) + ": ");
+        marks[i] = sc.nextInt();
+    }
+    Student student = new Student(name, marks);
+
+    int total = student.calculateTotal();
+    double avg = student.calculateAverage();
+
+    System.out.println("\nStudent Name: " + name);
+    System.out.println("Total Marks: " + total);
+    System.out.println("Average Marks: " + avg);
 
 //    7
-//    System.out.print("Enter bank holder: ");
-//    String name7 = sc.nextLine();
-//    System.out.println("Enter account number: ");
-//    int accNum = sc.nextInt();
-//    System.out.println("Enter balance");
-//    int balance = sc.nextInt();
-//
-//    BankAccount b = new BankAccount(name7, accNum, balance);
-//    System.out.println("Holder name: " + b.getHolderName());
-//    System.out.println("Account Number: " + b.getAccountNumber());
-//    System.out.println("Balance: " + b.getBalance());
+    System.out.print("Enter bank holder: ");
+    String name7 = sc.nextLine();
+    System.out.println("Enter account number: ");
+    int accNum = sc.nextInt();
+    System.out.println("Enter balance");
+    int balance = sc.nextInt();
+
+    BankAccount b = new BankAccount(name7, accNum, balance);
+    System.out.println("Holder name: " + b.getHolderName());
+    System.out.println("Account Number: " + b.getAccountNumber());
+    System.out.println("Balance: " + b.getBalance());
 
 //    8
     Counter c1 = new Counter();
