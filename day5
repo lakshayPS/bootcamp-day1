@@ -9,6 +9,7 @@
    scp /home/lakshay-pratap-singh/Documents/demo5 manoj-jaiswal@10.1.210.44:/home/manoj-jaiswal/Documents/linux
    exit
 
+
 4. ps -ef | grep java > java_file
 
 5. 
