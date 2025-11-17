@@ -15,7 +15,7 @@ class SharedBuffer {
         notifyAll(); // wake up consumer
     }
 
-    // Consumer removes data
+    // Consumer removes dataa
     public synchronized int consume() throws InterruptedException {
         while (buffer.isEmpty()) {
             wait(); // wait if buffer is empty
