@@ -3,7 +3,7 @@
 void main() {
     List<Integer> nums = Arrays.asList(3, 2, 10, 15, 8, 21, 14, 7);
 
-    // 3️⃣ Define lambda rules
+    // 3️Define lambda rules
     NumberRule isEven = n -> n % 2 == 0;
 
     NumberRule isPrime = n -> {
@@ -14,16 +14,16 @@ void main() {
         return true;
     };
 
-    // 4️⃣ Stream operations
+//     4️Stream operations
     List<Integer> result = nums.stream()
             .filter(n -> isEven.apply(n) && isPrime.apply(n)) // even AND prime
             .map(n -> n * n)                                 // square each
             .collect(Collectors.toList());                   // collect results
 
-    // 5️⃣ Optional: get first squared number
+    // 5️Optional: get first squared number
     Optional<Integer> firstSquared = result.stream().findFirst();
 
-    // 6️⃣ Print result
+    // 6️Print result
     firstSquared.ifPresentOrElse(
             n -> System.out.println("First squared number: " + n),
             () -> System.out.println("No matching number found")
