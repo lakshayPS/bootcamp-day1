@@ -9,6 +9,7 @@ import { useState } from "react";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Counter from "./Pages/Counter";
 import DigitalWatch from "./Pages/DigitalWatch";
+import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -43,12 +44,7 @@ function App() {
             <Route path="digitalWatch" element={<DigitalWatch />} />
           </Route>
 
-          <Route
-            path="*"
-            element={
-              <h2 style={{ textAlign: "center" }}>404 - Page Not Found</h2>
-            }
-          />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>
